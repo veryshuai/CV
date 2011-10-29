@@ -1,0 +1,183 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{David C. Jinkins}
+
+% Replace this with a link to your CV if you like, or set it empty
+ %(as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://www.personal.psu.edu/dcj138/cv/cv.pdf}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+\hrule 
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{4mm}
+
+\begin{minipage}{0.45\linewidth}
+  \hspace*{5mm}\href{http://www.psu.edu/}{Penn State University} \\
+  \hspace*{5mm}Department of Economics \\
+  \hspace*{5mm}Kern Building \\
+  \hspace*{5mm}State College, PA 16802
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (814) 753-0181 \\
+    %Fax: &  (919) 962-5678 \\
+    Email: & \href{mailto:dcj138@psu.edu}{\tt dcj138@psu.edu} \\
+    Homepage: & \href{http://www.personal.psu.edu/dcj138/}{\tt http://www.personal.psu.edu/dcj138/} \\
+  \end{tabular}
+\end{minipage}
+
+
+\vspace{7mm}
+{\Large Personal}
+\vspace{1mm}
+ \hrule
+
+\begin{itemize}
+\item Citizenship: United States.
+\item Languages: English, Mandarin Chinese, Turkish.
+\item Technical: Matlab, \LaTeX, Stata, Mathematica, html.
+\end{itemize}
+
+\vspace{4mm}
+{\Large Education}
+\vspace{1mm}
+ \hrule
+
+\begin{itemize}
+  \item PHD Economics (\emph{in progress}), Penn State University, 2009-present,\\
+	\hspace*{1cm}\emph{Candidacy Exams Passed, Fall 2010,}\\
+	\hspace*{1cm}\emph{Fields: Trade, Development, Game Theory.}
+	
+
+  \item MA Economics, National Taiwan University, 2009,\\
+	\hspace*{1cm}\emph{Masters Thesis: "A Bridge Goes Both Ways: A Two-Way Migration Model with Incomplete Information \hspace*{1cm}and Social Capital".}
+
+  \item BA Political Science, Carleton College, 2005,\\
+	\hspace*{1cm}\emph{Capstone Project: "Gramsci and Chinese Workers".}
+\end{itemize}
+
+\vspace{4mm}
+{\Large Employment}
+ \hrule
+
+\begin{itemize}
+\item Penn State University, Research Assistant 2009-present.
+\item National Taiwan University, Research Assistant 2008--2009,\\
+	\hspace*{1cm}\emph{Used Stata to analyze huge Taiwanese national health care data set.}
+\item K International Transport Company, Freight Forwarder 2005--2006,\\
+	\hspace*{1cm}\emph{Coordinated vehicle and machinery shipments to Europe, Africa, and South Asia.} 
+\end{itemize}
+
+\vspace{4mm}
+{\Large Awards}
+\vspace{1mm}
+ \hrule
+
+\begin{itemize}
+\item Penn State University, Graduate Research Assistant Fellowship 2009-present.
+\item Ministry of Education Taiwan Scholarship, Taiwan 2007--2009,\\
+	\hspace*{1cm}\emph{Full funding including stipend to pursue graduate studies in Taiwan.}
+\item U.S. Fulbright Fellowship, Turkey 2006--2007,\\
+	\hspace*{1cm}\emph{Topic: International migration and Chinese nationals in Turkey}.
+\item Chang-Lan Fellowship, China 2003,\\
+	\hspace*{1cm}\emph{Topic: Former state-owned industry laborers in Manchuria.} \\ \\
+\end{itemize}
+
+\vspace{4mm}
+{\Large Presentations}
+\vspace{1mm}
+ \hrule
+
+\begin{itemize}
+\item Jackson and Rogers (2007) and Chaney (2010). Trade Reading Group, Penn State University, Fall 2010\\
+\hspace*{1cm}\emph{with Felix Tintelnot}.
+\item Jackson and Rogers (2007). Micro Theory Reading Group, Penn State University, Fall 2010\\
+\hspace*{1cm}\emph{with Felix Tintelnot}.
+\item 
+
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
